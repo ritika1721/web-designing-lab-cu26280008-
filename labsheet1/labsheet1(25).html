@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Name:</label>
+            <input type="text" name="name"><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <label>How do you rate our website?</label><br>
+
+            <input type="radio" name="rating" value="excellent">
+            Excellent
+
+            <input type="radio" name="rating" value="good">
+            Good
+
+            <input type="radio" name="rating" value="average">
+            Average
+
+            <br><br>
+
+            <label>Suggestions:</label><br>
+            <textarea rows="5" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Survey">
+
+    </form>
+</body>
+</html>

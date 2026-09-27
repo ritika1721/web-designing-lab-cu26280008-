@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Closure Counter</title>
+</head>
+<body>
+
+<h2>Counter using Closure</h2>
+
+<script>
+    function counter() {
+
+        let count = 0;   // Private variable
+
+        return {
+            increment: function() {
+                count++;
+                return count;
+            },
+
+            decrement: function() {
+                count--;
+                return count;
+            }
+        };
+    }
+
+    let myCounter = counter();
+
+    document.write("After Increment: " + myCounter.increment() + "<br>");
+    document.write("After Increment: " + myCounter.increment() + "<br>");
+    document.write("After Decrement: " + myCounter.decrement() + "<br>");
+</script>
+
+</body>
+</html>
+

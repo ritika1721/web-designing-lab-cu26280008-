@@ -1,0 +1,58 @@
+```html id="a7k2p9"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery Slider</title>
+</head>
+<body>
+
+<h2>Dynamic Image Gallery</h2>
+
+<img id="gallery" src="image1.jpg" width="400" height="250">
+
+<br><br>
+
+<button id="previous">Previous</button>
+<button id="next">Next</button>
+
+<script>
+    
+    let images = [
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg",
+        "image4.jpg"
+    ];
+
+    let index = 0;
+
+    let gallery = document.getElementById("gallery");
+    let next = document.getElementById("next");
+    let previous = document.getElementById("previous");
+
+    
+    next.addEventListener("click", function() {
+        index++;
+
+        if (index >= images.length) {
+            index = 0;
+        }
+
+        gallery.src = images[index];
+    });
+
+    
+    previous.addEventListener("click", function() {
+        index--;
+
+        if (index < 0) {
+            index = images.length - 1;
+        }
+
+        gallery.src = images[index];
+    });
+</script>
+
+</body>
+</html>
+

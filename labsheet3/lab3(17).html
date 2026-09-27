@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vowel Counter</title>
+</head>
+<body>
+
+<h2>Count Vowels</h2>
+
+<script>
+    function countVowels(text) {
+        let count = 0;
+
+        for (let i = 0; i < text.length; i++) {
+            let ch = text[i].toLowerCase();
+
+            if (ch == "a" || ch == "e" || ch == "i" ||
+                ch == "o" || ch == "u") {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    let paragraph = prompt("Enter a paragraph:");
+
+    let result = countVowels(paragraph);
+
+    document.write("Number of vowels: " + result);
+</script>
+
+</body>
+</html>
+

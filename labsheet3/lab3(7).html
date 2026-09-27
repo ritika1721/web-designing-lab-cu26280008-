@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Object</title>
+</head>
+<body>
+
+<h2>Student Information</h2>
+
+<script>
+    let student = {
+        name: "Ritika",
+        age: 21,
+        course: "MCA",
+
+        displayInfo: function() {
+            document.write("Name: " + this.name + "<br>");
+            document.write("Age: " + this.age + "<br>");
+            document.write("Course: " + this.course + "<br>");
+        },
+
+        introduce: function() {
+            document.write("Hello, my name is " + this.name +
+                           " and I am studying " + this.course + ".");
+        }
+    };
+
+    student.displayInfo();
+    document.write("<br><br>");
+    student.introduce();
+</script>
+
+</body>
+</html>
+

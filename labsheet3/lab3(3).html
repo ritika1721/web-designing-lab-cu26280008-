@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade</title>
+</head>
+<body>
+
+<script>
+    let marks = Number(prompt("Enter student marks:"));
+    let grade;
+
+    // Using if-else
+    if (marks >= 90) {
+        grade = "A";
+    }
+    else if (marks >= 80) {
+        grade = "B";
+    }
+    else if (marks >= 70) {
+        grade = "C";
+    }
+    else if (marks >= 60) {
+        grade = "D";
+    }
+    else {
+        grade = "F";
+    }
+
+    switch (grade) {
+        case "A":
+            alert("Grade: A - Excellent");
+            break;
+        case "B":
+            alert("Grade: B - Very Good");
+            break;
+        case "C":
+            alert("Grade: C - Good");
+            break;
+        case "D":
+            alert("Grade: D - Average");
+            break;
+        case "F":
+            alert("Grade: F - Fail");
+            break;
+    }
+</script>
+
+</body>
+</html>

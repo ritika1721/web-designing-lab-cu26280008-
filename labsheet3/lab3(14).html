@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Exception Handling</title>
+</head>
+<body>
+
+<h2>JSON Parsing using try-catch-finally</h2>
+
+<script>
+    let jsonString = '{"name":"Ritika","age":21}';
+
+    try {
+        // Parse JSON string
+        let student = JSON.parse(jsonString);
+
+        document.write("Name: " + student.name + "<br>");
+        document.write("Age: " + student.age + "<br>");
+    }
+    catch (error) {
+        document.write("Error: Invalid JSON data.");
+    }
+    finally {
+        document.write("<br>JSON parsing process completed.");
+    }
+</script>
+
+</body>
+</html>
+

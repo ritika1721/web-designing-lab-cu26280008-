@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table Generator</title>
+</head>
+<body>
+
+<h2>Dynamic Table Generator</h2>
+
+<label>Enter Rows:</label>
+<input type="number" id="rows">
+
+<br><br>
+
+<label>Enter Columns:</label>
+<input type="number" id="columns">
+
+<br><br>
+
+<button onclick="createTable()">Generate Table</button>
+
+<div id="tableContainer"></div>
+
+<script>
+    function createTable() {
+
+        let rows = Number(document.getElementById("rows").value);
+        let columns = Number(document.getElementById("columns").value);
+
+        let table = document.createElement("table");
+        table.border = "1";
+
+        for (let i = 1; i <= rows; i++) {
+
+            let row = document.createElement("tr");
+
+            for (let j = 1; j <= columns; j++) {
+
+                let cell = document.createElement("td");
+
+                cell.textContent = "Row " + i + ", Column " + j;
+
+                row.appendChild(cell);
+            }
+
+            table.appendChild(row);
+        }
+
+        let container = document.getElementById("tableContainer");
+
+        container.innerHTML = "";
+        container.appendChild(table);
+    }
+</script>
+
+</body>
+</html>
+

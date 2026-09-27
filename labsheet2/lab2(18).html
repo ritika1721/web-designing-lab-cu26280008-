@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .form, .info {
+            width: 50%;
+            padding: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .form, .info {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Contact Us</h2>
+
+<div class="container">
+
+    <div class="form">
+
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+
+    </div>
+
+    <div class="info">
+
+        <h3>Our Company</h3>
+        <p>COER University</p>
+        <p>Roorkee, Uttarakhand</p>
+        <p>Email: info@example.com</p>
+        <p>Phone: 9876543210</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

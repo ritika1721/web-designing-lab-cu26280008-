@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Function</title>
+</head>
+<body>
+
+<h2>Callback Function and setTimeout</h2>
+
+<p id="output"></p>
+
+<script>
+
+    function message(callback) {
+
+        setTimeout(function() {
+            document.getElementById("output").innerHTML =
+                "Hello! This message is displayed after 2 seconds.";
+
+            callback();
+        }, 2000);
+
+    }
+
+    function finished() {
+        document.getElementById("output").innerHTML +=
+            "<br>Callback function executed successfully!";
+    }
+
+    message(finished);
+
+    document.getElementById("output").innerHTML +=
+        "<br>This line executes immediately.";
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Check</title>
+</head>
+<body>
+
+<h2>Reverse String and Check Palindrome</h2>
+
+<script>
+    function checkPalindrome(str) {
+        let reverse = str.split("").reverse().join("");
+
+        document.write("Original String: " + str + "<br>");
+        document.write("Reversed String: " + reverse + "<br>");
+
+        if (str == reverse) {
+            document.write("The string is a Palindrome.");
+        } else {
+            document.write("The string is not a Palindrome.");
+        }
+    }
+
+    let str = prompt("Enter a string:");
+    checkPalindrome(str);
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Manipulation</title>
+</head>
+<body>
+
+<h2>Array Manipulation using JavaScript</h2>
+
+<script>
+    let numbers = [5, 2, 8, 1, 10];
+
+    document.write("Original Array: " + numbers + "<br><br>");
+
+    
+    numbers.push(7);
+    document.write("After Adding 7: " + numbers + "<br>");
+
+    
+    numbers.pop();
+    document.write("After Removing Last Element: " + numbers + "<br>");
+
+    numbers.sort(function(a, b) {
+        return a - b;
+    });
+    document.write("Sorted Array: " + numbers + "<br>");
+
+    
+    let doubled = numbers.map(function(num) {
+        return num * 2;
+    });
+    document.write("After map (×2): " + doubled + "<br>");
+
+   
+    let filtered = numbers.filter(function(num) {
+        return num > 5;
+    });
+    document.write("Numbers greater than 5: " + filtered);
+</script>
+
+</body>
+</html>
+

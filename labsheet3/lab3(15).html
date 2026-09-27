@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ES6 Features</title>
+</head>
+<body>
+
+<h2>ES6 JavaScript Features</h2>
+
+<script>
+   
+    let student = {
+        name: "Ritika",
+        age: 21,
+        course: "MCA"
+    };
+
+    
+    let { name, age, course } = student;
+
+    let displayInfo = () => {
+        return `Name: ${name}, Age: ${age}, Course: ${course}`;
+    };
+
+  
+    document.write(displayInfo());
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        fieldset {
+            width: 400px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        Name:
+        <input type="text"><br>
+
+        Email:
+        <input type="email"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Survey</legend>
+
+        How was your experience?<br>
+
+        <input type="radio" name="r"> Excellent<br>
+        <input type="radio" name="r"> Good<br>
+        <input type="radio" name="r"> Average<br>
+        <input type="radio" name="r"> Poor<br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
