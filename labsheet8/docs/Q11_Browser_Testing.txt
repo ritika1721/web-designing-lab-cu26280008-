@@ -1,0 +1,20 @@
+Q11. CROSS-BROWSER TESTING
+
+Browsers used for testing:
+
+1. Google Chrome
+2. Mozilla Firefox
+3. Microsoft Edge
+4. Safari
+
+Testing Points:
+
+1. Check website layout.
+2. Check navigation links.
+3. Test image carousel.
+4. Test booking form.
+5. Check Google Maps.
+6. Check buttons and links.
+
+Record the actual result after testing
+in each browser.

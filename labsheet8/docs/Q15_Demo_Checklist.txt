@@ -1,0 +1,14 @@
+Q15. LIVE WEBSITE DEMONSTRATION
+
+1. Open the website in VS Code.
+2. Run the website using Live Server.
+3. Show the home page.
+4. Demonstrate the image carousel.
+5. Show the menu section.
+6. Explain the about section.
+7. Demonstrate customer reviews.
+8. Submit the booking form.
+9. Show the Google Map.
+10. Demonstrate social sharing.
+11. Resize the browser to show responsiveness.
+12. Explain the website features.

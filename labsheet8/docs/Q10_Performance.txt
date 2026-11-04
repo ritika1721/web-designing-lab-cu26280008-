@@ -1,0 +1,14 @@
+Q10. WEBSITE PERFORMANCE OPTIMIZATION
+
+1. Compress images before uploading.
+2. Use WebP image format.
+3. Minify CSS and JavaScript files.
+4. Remove unused CSS and JavaScript.
+5. Use browser caching.
+6. Use lazy loading for images and maps.
+7. Reduce unnecessary external libraries.
+8. Test website speed using Google Lighthouse.
+
+Result:
+These techniques help improve website loading speed
+and overall performance.

@@ -1,0 +1,21 @@
+Q20. FINAL CODE AUDIT
+
+1. Check HTML structure.
+2. Check CSS styling.
+3. Check JavaScript functionality.
+4. Check all images and alt attributes.
+5. Check form validation.
+6. Check keyboard navigation.
+7. Check colour contrast.
+8. Check mobile responsiveness.
+9. Run Google Lighthouse.
+10. Check Performance, Accessibility,
+    Best Practices and SEO scores.
+
+CONCLUSION:
+
+The website has been developed using
+HTML5, CSS3 and JavaScript.
+
+Final scores and test results should be
+added after actual testing.

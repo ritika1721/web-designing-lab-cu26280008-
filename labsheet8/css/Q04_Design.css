@@ -1,0 +1,28 @@
+/* Modern Web Design */
+
+:root {
+    --primary: #234b36;
+    --secondary: #dce9dc;
+    --background: #f5f8f2;
+    --text: #26382c;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    transition: 0.3s;
+}

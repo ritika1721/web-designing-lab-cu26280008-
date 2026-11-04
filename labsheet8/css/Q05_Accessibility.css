@@ -1,0 +1,30 @@
+/* Accessibility Design */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: white;
+    padding: 10px;
+    z-index: 100;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}

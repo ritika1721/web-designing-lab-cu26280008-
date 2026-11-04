@@ -1,0 +1,22 @@
+Q12. RESPONSIVE TESTING
+
+Test different screen sizes:
+
+1. Mobile - 320px
+2. Mobile - 375px
+3. Tablet - 768px
+4. Laptop - 1366px
+5. Desktop - 1920px
+
+Testing Steps:
+
+1. Open browser developer tools.
+2. Enable device toolbar.
+3. Select different screen sizes.
+4. Check images and text.
+5. Check navigation menu.
+6. Check booking form.
+7. Verify that horizontal scrolling is not present.
+
+CSS Grid and Flexbox are used
+to make the website responsive.
