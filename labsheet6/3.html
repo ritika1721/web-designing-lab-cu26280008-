@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hero Banner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ), url("https://picsum.photos/1200/800");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        button {
+            background: orange;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Creative Ideas and Smart Solutions</p>
+        <button onclick="alert('Welcome!')">
+            Explore More
+        </button>
+    </div>
+</div>
+
+</body>
+</html>

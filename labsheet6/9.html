@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smooth Scrolling</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        nav {
+            background: navy;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        section {
+            height: 400px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        section:nth-child(even) {
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h1>Home Page</h1>
+</section>
+
+<section id="about">
+    <h1>About Page</h1>
+</section>
+
+<section id="contact">
+    <h1>Contact Page</h1>
+</section>
+
+</body>
+</html>

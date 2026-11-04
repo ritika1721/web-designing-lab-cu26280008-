@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Light Mode</title>
+
+    <style>
+        :root {
+            --bg: white;
+            --text: black;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+
+        button {
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Dark and Light Mode</h1>
+
+<p>Click the button to change the theme.</p>
+
+<button onclick="changeMode()">Dark Mode</button>
+
+<script>
+    let dark = false;
+
+    function changeMode() {
+        dark = !dark;
+
+        if (dark) {
+            document.documentElement.style.setProperty("--bg", "black");
+            document.documentElement.style.setProperty("--text", "white");
+            document.querySelector("button").innerHTML = "Light Mode";
+        }
+        else {
+            document.documentElement.style.setProperty("--bg", "white");
+            document.documentElement.style.setProperty("--text", "black");
+            document.querySelector("button").innerHTML = "Dark Mode";
+        }
+    }
+</script>
+
+</body>
+</html>

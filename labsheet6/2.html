@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Portfolio</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: navy;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h3>HTML</h3>
+        <p>Web Page Structure</p>
+    </div>
+
+    <div class="card">
+        <h3>CSS</h3>
+        <p>Web Page Design</p>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript</h3>
+        <p>Web Page Interaction</p>
+    </div>
+</div>
+
+</body>
+</html>

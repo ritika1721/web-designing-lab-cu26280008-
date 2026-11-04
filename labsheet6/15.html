@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics Counter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background: lightgray;
+            padding: 25px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .number {
+            font-size: 35px;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Our Statistics</h1>
+
+<div class="container">
+
+    <div class="box">
+        <h2 class="number" data-target="100">0</h2>
+        <p>Students</p>
+    </div>
+
+    <div class="box">
+        <h2 class="number" data-target="25">0</h2>
+        <p>Projects</p>
+    </div>
+
+    <div class="box">
+        <h2 class="number" data-target="10">0</h2>
+        <p>Courses</p>
+    </div>
+
+</div>
+
+<script>
+    let counters = document.querySelectorAll(".number");
+
+    counters.forEach(function(counter) {
+        let target = Number(counter.getAttribute("data-target"));
+        let count = 0;
+
+        let timer = setInterval(function() {
+            count++;
+
+            counter.innerHTML = count;
+
+            if (count >= target) {
+                clearInterval(timer);
+            }
+        }, 30);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testimonials Slider</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: lightgray;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background: navy;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Reviews</h1>
+
+<div class="card">
+    <h2 id="name">Amit</h2>
+    <p id="review">This course is very useful.</p>
+</div>
+
+<button onclick="previous()">Previous</button>
+<button onclick="next()">Next</button>
+
+<script>
+    let reviews = [
+        ["Amit", "This course is very useful."],
+        ["Riya", "The lessons are easy to understand."],
+        ["Neha", "I learned many new things."]
+    ];
+
+    let index = 0;
+
+    function showReview() {
+        document.getElementById("name").innerHTML = reviews[index][0];
+        document.getElementById("review").innerHTML = reviews[index][1];
+    }
+
+    function next() {
+        index = (index + 1) % reviews.length;
+        showReview();
+    }
+
+    function previous() {
+        index = (index - 1 + reviews.length) % reviews.length;
+        showReview();
+    }
+</script>
+
+</body>
+</html>

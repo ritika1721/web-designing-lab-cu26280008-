@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: lightgray;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .box {
+            background: navy;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            flex: 1;
+        }
+
+        @media(max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                background: green;
+            }
+        }
+
+        @media(min-width: 701px) and (max-width: 1000px) {
+            .box {
+                background: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center">Responsive Layout</h1>
+
+<div class="container">
+    <div class="box">Home</div>
+    <div class="box">About</div>
+    <div class="box">Contact</div>
+</div>
+
+</body>
+</html>

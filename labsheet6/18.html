@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        header {
+            background: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 15px;
+            background: lightgray;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+
+            header {
+                background: white;
+                color: black;
+            }
+
+            section {
+                background: white;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>I am a student learning web development.</p>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+    <p>HTML, CSS and JavaScript</p>
+</section>
+
+<section>
+    <h2>My Projects</h2>
+    <p>Portfolio Website and Student Management System.</p>
+</section>
+
+<button onclick="window.print()">Print Page</button>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: lightgray;
+            padding: 30px;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<form id="myForm">
+    <h2>Contact Us</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="text" id="email" placeholder="Enter Email">
+
+    <textarea id="message" placeholder="Enter Message"></textarea>
+
+    <button type="submit">Submit</button>
+
+    <p id="result"></p>
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        let result = document.getElementById("result");
+
+        if (name == "" || email == "" || message == "") {
+            result.innerHTML = "Please fill all fields.";
+            result.style.color = "red";
+        }
+        else if (!email.includes("@") || !email.includes(".")) {
+            result.innerHTML = "Enter valid email.";
+            result.style.color = "red";
+        }
+        else {
+            result.innerHTML = "Form submitted successfully!";
+            result.style.color = "green";
+        }
+    });
+</script>
+
+</body>
+</html>

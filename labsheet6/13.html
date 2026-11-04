@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Back to Top</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .content {
+            height: 1200px;
+            padding: 30px;
+            background: lightgray;
+        }
+
+        button {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: navy;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>My Website</h1>
+    <p>Scroll down to see the button.</p>
+</div>
+
+<button id="topBtn">Back to Top ↑</button>
+
+<script>
+    let btn = document.getElementById("topBtn");
+
+    window.onscroll = function() {
+        if (window.scrollY > 200) {
+            btn.style.display = "block";
+        }
+        else {
+            btn.style.display = "none";
+        }
+    };
+
+    btn.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+
+</body>
+</html>

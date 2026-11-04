@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ Accordion</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: lightgray;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .question {
+            background: navy;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .answer {
+            display: none;
+            background: white;
+            padding: 15px;
+        }
+
+        .answer.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="question">What is HTML?</div>
+    <div class="answer">
+        HTML is used to create web pages.
+    </div>
+
+    <div class="question">What is CSS?</div>
+    <div class="answer">
+        CSS is used to design web pages.
+    </div>
+
+    <div class="question">What is JavaScript?</div>
+    <div class="answer">
+        JavaScript makes web pages interactive.
+    </div>
+
+</div>
+
+<script>
+    let questions = document.querySelectorAll(".question");
+
+    questions.forEach(function(question) {
+        question.onclick = function() {
+            this.nextElementSibling.classList.toggle("show");
+        };
+    });
+</script>
+
+</body>
+</html>
